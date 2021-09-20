@@ -56,7 +56,7 @@ export default function App() {
 
   const text = !showDetails ? "Want more details?" : "Hide details.";
   return (
-    <>
+    <div className="main">
       {isLandscape ? (
         <div>
           <div className="App">
@@ -104,6 +104,6 @@ export default function App() {
       ) : (
         <h1>Please rotate your phone!</h1>
       )}
-    </>
+    </div>
   );
 }
