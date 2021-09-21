@@ -25,9 +25,9 @@ export default function App() {
   });
 
   const checkOrientation = () => {
-    if (window.screen.orientation.type === "landscape-primary") {
+    if (window.matchMedia("(orientation: landscape)").matches) {
       setIsLandscape(true);
-    } else if (window.screen.orientation.type === "portrait-primary") {
+    } else if (window.matchMedia("(orientation: portrait)").matches) {
       setIsLandscape(false);
     }
   };
